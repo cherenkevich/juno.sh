@@ -8,9 +8,22 @@ date: 2017-09-01 10:00:00
 author: Alex Staravoitau
 ---
 
-In order to use Jupyter Notebook on your iPad or iPhone in both Juno and Safari, one needs to correctly configure SSL certificates. Since issuing a proper certificate from a trusted authority could be challenging in some cases, a self-signed certificate should suffice, provided it was signed by a CA that is trusted by your iOS device. 
+In order to use Jupyter Notebook over HTTPS on your iPad or iPhone in both Juno and Safari, one needs to correctly configure SSL certificates. Since issuing a proper certificate from a trusted authority could be challenging in some cases, a self-signed certificate should suffice, provided it was signed by a CA that is trusted by your iOS device. 
 
 Follow these steps to get it working on your iPhone or iPad.<!--more-->
+
+### Do I need this?
+
+Please, mind that you only need SSL certificate if you plan to connect to your server over HTTPS; you don't need SSL certificates for plain HTTP connections. Whether you should use HTTPS or plain HTTP depends on how you connect to your Jupyter Notebook server. 
+
+Typically, you **should use HTTPS**:
+* If you have configured a [public Jupyter Notebook server](https://jupyter-notebook.readthedocs.io/en/stable/public_server.html#running-a-public-notebook-server){:target="_blank"}, and your intention is to access it directly from _outside_ of your local network.
+
+Usually, you **can use plain HTTP**:
+* If you establish an SSH tunnel with your server, and access Jupyter using port forwarding. Most likely, you will be connecting to `localhost` over secure tunnel, and can use plain HTTP.
+* If you would like to access a server which is in your local network — say, connected to the same Wi-Fi. Assuming your network itself is secure, it should be safe to use plain HTTP.
+
+For **HTTPS**, please follow the steps below to prepare a self-signed SSL certificate, which will be trusted by your iOS device.
 
 ### Prerequisites
 
@@ -25,8 +38,8 @@ If `which` command does not return a path then you will need to install openssl 
 
 | If you have... | Install with... |
 | -------------- | --------------- |
-| macOS          | [Homebrew](http://mxcl.github.com/homebrew/): `brew install openssl` |
-| Windows        | [Windows complete package .exe installer](http://gnuwin32.sourceforge.net/packages/openssl.htm) |
+| macOS          | [Homebrew](http://mxcl.github.com/homebrew/){:target="_blank"}: `brew install openssl` |
+| Windows        | [Windows complete package .exe installer](http://gnuwin32.sourceforge.net/packages/openssl.htm){:target="_blank"} |
 | Ubuntu         | `apt-get install openssl` |
 
 ### Prepare configuration file
@@ -110,7 +123,7 @@ Install the **CA certificate** on your device (the one located at `ca/certs/ca.c
 
 ### Enable full trust for installed certificate
 
-As of iOS 10.3 [you must manually turn on trust](https://support.apple.com/en-gb/HT204477) for SSL when you install a certificate. In order to turn on SSL trust for CA certificate, go to Settings > General > About > Certificate Trust Settings. Under "Enable full trust for root certificates", turn on trust for the certificate.
+As of iOS 10.3 [you must manually turn on trust](https://support.apple.com/en-gb/HT204477){:target="_blank"} for SSL when you install a certificate. In order to turn on SSL trust for CA certificate, go to Settings > General > About > Certificate Trust Settings. Under "Enable full trust for root certificates", turn on trust for the certificate.
 
 ![iOS certificate installation](/assets/img/enable_cert_s.png)
 {: style="text-align: center;"}
@@ -123,8 +136,8 @@ Once CA certificate is trusted on the device, all certificates signed with it wi
 jupyter notebook --certfile ~/.ssh/jupyter/certs/ssl.cert.pem --keyfile ~/.ssh/jupyter/private/ssl.key.pem
 ```
 
-Alternatively, you can specify paths to key and certificate in [Jupyter configuration file](http://jupyter-notebook.readthedocs.io/en/latest/public_server.html#running-a-public-notebook-server).
+Alternatively, you can specify paths to key and certificate in [Jupyter configuration file](http://jupyter-notebook.readthedocs.io/en/latest/public_server.html#running-a-public-notebook-server){:target="_blank"}.
 
 {:refdef: .notice}
-<i class="fa fa-info-circle fa-2x" aria-hidden="true" style="color: #CCCCCC; vertical-align: middle;"></i><span style="display:inline-block; width: 8px;"></span> <span>This material was based on [OpenSSL Certificate Authority](https://jamielinux.com/docs/openssl-certificate-authority/) and [Creating a Self-Signed SSL Certificate](https://devcenter.heroku.com/articles/ssl-certificate-self) articles.</span>
+<i class="fa fa-info-circle fa-2x" aria-hidden="true" style="color: #CCCCCC; vertical-align: middle;"></i><span style="display:inline-block; width: 8px;"></span> <span>This material was based on [OpenSSL Certificate Authority](https://jamielinux.com/docs/openssl-certificate-authority/){:target="_blank"} and [Creating a Self-Signed SSL Certificate](https://devcenter.heroku.com/articles/ssl-certificate-self){:target="_blank"} articles.</span>
 {: refdef}
