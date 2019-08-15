@@ -17,7 +17,7 @@ Follow these steps to get it working on your iPhone or iPad.<!--more-->
 Please, mind that you only need SSL certificate if you plan to connect to your server over HTTPS; you don't need SSL certificates for plain HTTP connections. Whether you should use HTTPS or plain HTTP depends on how you connect to your Jupyter Notebook server. 
 
 Typically, you **should use HTTPS**:
-* If you have configured a [public Jupyter Notebook server](https://jupyter-notebook.readthedocs.io/en/stable/public_server.html#running-a-public-notebook-server){:target="_blank"}, and your intention is to access it directly from _outside_ of your local network.
+* If you have configured a [public Jupyter Notebook server](https://jupyter-notebook.readthedocs.io/en/stable/public_server.html#running-a-public-notebook-server){:target="_blank"}, and your intention is to access it directly from _outside_ of your local network, i.e. by using its public IP address or hostname.
 
 Usually, you **can use plain HTTP**:
 * If you establish an SSH tunnel with your server, and access Jupyter using port forwarding. Most likely, you will be connecting to `localhost` over secure tunnel, and can use plain HTTP.
