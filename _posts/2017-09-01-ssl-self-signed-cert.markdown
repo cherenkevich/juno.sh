@@ -108,7 +108,7 @@ Finally, issue your server SSL certificate. You will be asked to provide your CA
 
 ```bash
 openssl ca -config openssl.cnf \
-    -extensions server_cert -days 1024 -notext -md sha256 \
+    -extensions server_cert -days 825 -notext -md sha256 \
     -in jupyter/csr/ssl.csr.pem \
     -out jupyter/certs/ssl.cert.pem
 chmod 444 jupyter/certs/ssl.cert.pem
