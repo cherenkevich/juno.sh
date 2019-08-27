@@ -114,16 +114,20 @@ openssl ca -config openssl.cnf \
 chmod 444 jupyter/certs/ssl.cert.pem
 ```
 
+{:refdef: .notice}
+<i class="fa fa-info-circle fa-2x" aria-hidden="true" style="color: #CCCCCC; vertical-align: middle;"></i><span style="display:inline-block; width: 8px;"></span> <span>Certificates with validity period of more than 825 days will not be trusted on iOS 13 and above — see [new security requirements](https://support.apple.com/en-us/HT210176){:target="_blank"}.</span>
+{: refdef}
+
 ### Install CA certificate on your iOS device
 
-Install the **CA certificate** on your device (the one located at `ca/certs/ca.cert.pem`). You can e-mail it to yourself, share it via AirDrop or Dropbox — as soon as you open it on your iOS device you will see installation popup.
+Install the **CA certificate** on your device (the one located at `ca/certs/ca.cert.pem`). You can e-mail it to yourself, share it via AirDrop or Dropbox — when you receive it, you will get an alert on your device saying that a new profile has been downloaded. Now go to Settings > Profile Downloaded (should appear at the top of the list), and install the certificate.
 
 ![iOS certificate installation](/assets/img/install_cert_s.png)
 {: style="text-align: center;"}
 
 ### Enable full trust for installed certificate
 
-As of iOS 10.3 [you must manually turn on trust](https://support.apple.com/en-gb/HT204477){:target="_blank"} for SSL when you install a certificate. In order to turn on SSL trust for CA certificate, go to Settings > General > About > Certificate Trust Settings. Under "Enable full trust for root certificates", turn on trust for the certificate.
+You must also [enable full trust](https://support.apple.com/en-gb/HT204477){:target="_blank"} for your certificate. In order to turn on SSL trust for CA certificate, go to Settings > General > About > Certificate Trust Settings. Under "Enable full trust for root certificates", turn on trust for the certificate.
 
 ![iOS certificate installation](/assets/img/enable_cert_s.png)
 {: style="text-align: center;"}
