@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Accessing Jupyter server on iOS over HTTPS"
+title: "Accessing Jupyter on iOS over HTTPS"
 description: "Follow these steps to prepare a self-signed SSL/TLS certificate for accessing Jupyter Notebook server from your iPhone or iPad over HTTPS"
 image: ""
 lang: "en_GB"
