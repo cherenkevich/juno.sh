@@ -1,20 +1,20 @@
 ---
 layout: post
-title: "Running a notebook server with SSL"
-description: "Follow these steps to prepare a self-signed SSL certificate for accessing Jupyter Notebook server from your iPhone or iPad."
+title: "Accessing Jupyter server on iOS over HTTPS"
+description: "Follow these steps to prepare a self-signed SSL/TLS certificate for accessing Jupyter Notebook server from your iPhone or iPad over HTTPS"
 image: ""
 lang: "en_GB"
 date: 2017-09-01 10:00:00
 author: Alex Staravoitau
 ---
 
-In order to use Jupyter Notebook over HTTPS on your iPad or iPhone in both Juno and Safari, one needs to correctly configure SSL certificates. Since issuing a proper certificate from a trusted authority could be challenging in some cases, a self-signed certificate should suffice, provided it was signed by a CA that is trusted by your iOS device. 
+In order to access a Jupyter server over HTTPS on your iPad or iPhone (in both Juno and Safari), one needs to correctly configure server's SSL/TLS certificate. Since issuing a proper certificate from a trusted authority could be challenging in some cases, a self-signed certificate should suffice, provided it was signed by a CA that is trusted by your iOS device. 
 
 <!--more-->
 
 ### Do I need this?
 
-Please, mind that you only need SSL certificate if you plan to connect to your server over HTTPS; you don't need SSL certificates for plain HTTP connections. Whether you should use HTTPS or plain HTTP depends on how you connect to your Jupyter Notebook server. 
+Please, mind that you only need SSL/TLS certificate if you plan to connect to your server over HTTPS; you don't need a certificate for plain HTTP connection. Whether you should use HTTPS or plain HTTP depends on how you connect to your Jupyter Notebook server. 
 
 Typically, you **should use HTTPS**:
 * If you have configured a [public Jupyter Notebook server](https://jupyter-notebook.readthedocs.io/en/stable/public_server.html#running-a-public-notebook-server){:target="_blank"}, and your intention is to access it directly from _outside_ of your local network using its public IP address or hostname.
@@ -23,7 +23,7 @@ Usually, you **can use plain HTTP**:
 * If you establish an SSH tunnel with your server, and access Jupyter using port forwarding. Most likely, you will be connecting to `localhost` over secure tunnel, and can use plain HTTP.
 * If you would like to access a server which is in your local network — say, connected to the same Wi-Fi. Assuming your network itself is secure, it should be safe to use plain HTTP.
 
-For **HTTPS**, please follow the steps below to prepare a self-signed SSL certificate, which will be trusted by your iOS device.
+For **HTTPS**, please follow the steps below to prepare a self-signed SSL/TLS certificate, which will be trusted by your iOS device.
 
 ### Prerequisites
 
@@ -46,13 +46,15 @@ If `which` command does not return a path then you will need to install openssl 
 
 [Download configuration file](/assets/openssl.cnf) and put it in the folder, where you are going to store your SSH keys and certificates. 
 
-Open configuration file in a text editor of your choice and put domain names and/or IP addresses of your servers at the bottom, in the **[ alt_names ]** section. If you connect to your server using its IP address (which happens to be **192.168.0.1**), your configuration file should end with:
+Open configuration file in a text editor of your choice and put domain names and/or IP addresses of your servers at the bottom, in the **[ alt_names ]** section. The important thing here is that these should be the _public_ addresses, i.e. domain or IP address which you will be connecting to. 
+
+If you connect to your server using its public IP address (which happens to be **85.184.100.12**), your configuration file should end with:
 
 ```
 ...
 
 [ alt_names ]
-IP.1 	= 192.168.0.1
+IP.1 	= 85.184.100.12
 ```
 
 ### Generate CA certificate
@@ -85,7 +87,7 @@ openssl req -config openssl.cnf \
 chmod 444 ca/certs/ca.cert.pem
 ```
 
-### Generate SSL certificate
+### Generate SSL/TLS certificate
 
 Assuming you are still in the directory where your configuration file is, create the directory structure and generate a new server key.
 
@@ -96,7 +98,7 @@ openssl genrsa -out jupyter/private/ssl.key.pem 2048
 chmod 400 jupyter/private/ssl.key.pem
 ```
 
-Request certificate for your server. Provide information that will be incorporated into your SSL certificate (or simply hit Enter to use defaults).
+Request certificate for your server. Provide information that will be incorporated into your SSL/TLS certificate (or simply hit Enter to use defaults).
 
 ```bash
 openssl req -config openssl.cnf \
@@ -104,7 +106,7 @@ openssl req -config openssl.cnf \
     -new -sha256 -out jupyter/csr/ssl.csr.pem
 ```
 
-Finally, issue your server SSL certificate. You will be asked to provide your CA private key pass phrase that you used earlier, and confirm your intention to sign SSL certificate.
+Finally, issue your server SSL/TLS certificate. You will be asked to provide your CA private key pass phrase that you used earlier, and confirm your intention to sign.
 
 ```bash
 openssl ca -config openssl.cnf \
@@ -127,14 +129,14 @@ Install the **CA certificate** on your device (the one located at `ca/certs/ca.c
 
 ### Enable full trust for installed certificate
 
-You must also [enable full trust](https://support.apple.com/en-gb/HT204477){:target="_blank"} for your certificate. In order to turn on SSL trust for CA certificate, go to Settings > General > About > Certificate Trust Settings. Under "Enable full trust for root certificates", turn on trust for the certificate.
+You must also [enable full trust](https://support.apple.com/en-gb/HT204477){:target="_blank"} for that CA certificate. Go to Settings > General > About > Certificate Trust Settings, and turn on trust for the certificate under the "Enable full trust for root certificates".
 
 ![iOS certificate installation](/assets/img/enable_cert_s.png)
 {: style="text-align: center;"}
 
 ### Run Jupyter Notebook
 
-Once CA certificate is trusted on the device, all certificates signed with it will be trusted too, including the one we generated for SSL, located at `jupyter/certs/ssl.cert.pem`. You can now use it when launching Jupyter Notebook by providing absolute paths to both key and certificate. If you generate all your certificate and keys in `~/.ssh/` folder, your paths will be:
+Once CA certificate is trusted on the device, all certificates that were signed with it will be trusted too, including the one we generated for HTTPS, located at `jupyter/certs/ssl.cert.pem`. You can now use it when launching Jupyter Notebook by providing absolute paths to both key and certificate. If you generate all your certificate and keys in `~/.ssh/` folder, your paths will be:
 
 ```bash
 jupyter notebook --certfile ~/.ssh/jupyter/certs/ssl.cert.pem --keyfile ~/.ssh/jupyter/private/ssl.key.pem
