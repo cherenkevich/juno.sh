@@ -2,7 +2,7 @@
 
 # Site settings
 title: Juno
-description: "Juno: iOS Jupyter client for iPhone and iPad. Connect to a notebook server with Juno and do everything you do on desktop, anywhere."
+description: "Juno and Juno Connect: ultimate Jupyter experience on your iPad or iPhone."
 analytics: UA-104527683-1
 baseurl:
 url: "//juno.sh"
@@ -10,7 +10,7 @@ image: /assets/images/open-graph.png
 
 # Build settings
 markdown: kramdown
-permalink: /:categories/:title/
+permalink: /:collection/:title/
 excerpt_separator: <!--more-->
 
 # Syntax highlighting
@@ -35,7 +35,7 @@ twitter:
   username: junoclient
 
 logo: /assets/images/open-graph.png
-about: "Connect to a Jupyter/IPython server with Juno and do everything you do on desktop, anywhere. Sign up for beta now!"
+about: "Ultimate Jupyter experience on your iPad or iPhone"
 author: "Alex Staravoitau"
 lang: "en_GB"
 
@@ -63,5 +63,7 @@ defaults:
 
 collections:
   docs:
-    permalink: /:collection/:title/
+    permalink: /:categories/:title/
     output: true
+  posts:
+    permalink: /blog/:title/
