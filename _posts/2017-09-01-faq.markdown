@@ -7,6 +7,7 @@ lang: "en_GB"
 date: 2017-09-01 11:00:00
 author: Alex Staravoitau
 no-blog: true
+permalink: /faq/
 ---
 ## What is Juno?
 [Juno](https://itunes.apple.com/app/juno-jupyter-notebook-client/id1315744137){:target="_blank"} is an iOS client for Jupyter — it lets you connect to a remote Jupyter server from your iPhone or iPad and do everything you do with Jupyter on desktop, anywhere.

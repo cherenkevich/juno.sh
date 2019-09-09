@@ -8,11 +8,6 @@ date: 2019-03-30 12:00:00
 author: Alex Staravoitau
 ---
 
-<span style="display:block; height: 20px;"></span>
-![Juno + Jupyter](/assets/img/blog/juno_jupyter.png)
-{: style="text-align: center;"}
-<span style="display:block; height: 20px;"></span>
-
 I'm pleased to announce that from now on I will be donating **10%** of all Juno sales proceeds to Project Jupyter. 
 
 Juno itself is not open-source, but I fully recognize the importance of open-source software. I think it's necessary to show support to projects which made Juno possible in the first place — such as Jupyter. I highly admire their work, and hope that this (small) contribution will nevertheless prove valuable to the Jupyter community!
@@ -23,7 +18,7 @@ If you would like to support Project Jupyter, consider [making a donation](https
 
 <a href="https://itunes.apple.com/app/juno-jupyter-notebook-client/id1315744137" target="blank">
 	<span style="display:block; height: 20px;"></span>
-    <img class="download-appstore-badge" style="height: 60px;" alt="Download Juno on AppStore" src="{{ "/assets/img/download_black.svg" | prepend: site.baseurl }}">
+    <img class="download-appstore-badge" style="height: 60px;" alt="Download Juno on AppStore" src="{{ "/images/blog/download_black.svg" | prepend: site.baseurl }}">
 </a>
 {: style="text-align: center;"}
 

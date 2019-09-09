@@ -8,7 +8,7 @@ date: 2019-07-11 12:00:00
 author: Alex Staravoitau
 ---
 
-Although Juno has been designed as a remote client, running Jupyter locally on your iPhone or iPad has always been an interesting opportunity. That's why over the last year I've been working on a new app, which is based on Juno, but doesn't need an external server to run: all computations happen locally, right on your iOS device. I'm pleased to announce that this app is now in open beta! 
+Although Juno Connect has been designed as a remote client, running Jupyter locally on your iPhone or iPad has always been an interesting opportunity. That's why over the last year I've been working on a new app, which is based on Juno Connect, but doesn't need an external server to run: all computations happen locally, right on your iOS device. I'm pleased to announce that this app is now in open beta! 
 <!--more-->
 
 #### Features
@@ -39,11 +39,12 @@ Please, keep in mind that the app is still in active development, so quite a few
 {: style="text-align: center;"}
 
 #### What happens to Jupyter client?
-In case you are wondering how it fits with Juno, the Jupyter client app, which is currently available on App Store — worry not, it's not going anywhere! Juno with embedded Jupyter will be released as a separate app some time later this year; however, Juno the Jupyter client will keep evolving on its own. To avoid confusion, it will be rebranded as Juno Connect in one of the next few updates (and will get a cool new icon!). Both apps will share new features whenever possible, as they are using the same notebook editor component under the hood.
+In case you are wondering how it fits the Jupyter client app, which is currently available on App Store — worry not, it's not going anywhere! Juno with embedded Jupyter will be released as a separate app some time later this year; however, the Jupyter client app will keep evolving on its own. To avoid confusion, it will be rebranded as Juno Connect in one of the next few updates (and will get a cool new icon!). Both apps will share new features whenever possible, as they are using the same notebook editor component under the hood.
 
 <span style="display:block; height: 20px;"></span>
-![Juno demo notebooks](/assets/img/blog/juno_embedded_jupyter.png)
-{: style="text-align: center;"}
+<div style="text-align: center;">
+	<img src="{{ "/images/blog/juno_embedded_jupyter.png" | prepend: site.baseurl }}">
+</div>
 <span style="display:block; height: 20px;"></span>
 
 Thanks again for your support, and I hope you are as excited as I am about how Juno apps are moving forward! Stay tuned for more updates. 😉
