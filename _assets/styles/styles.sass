@@ -972,6 +972,36 @@
     .newsletter__button
       line-height: 60px
 
+.crosssell
+  +layout
+  display: flex
+  flex-direction: column
+  align-items: center
+  text-align: center
+
+  .crosssell__link
+    color: $white
+    border-bottom: 1px solid $white
+
+  .crosssell__title
+    +mono
+    +light
+    +fs(35px, 46px)
+    color: $white
+    margin: 0 0 20px
+
+  @media screen and (min-width: 568px)
+
+    .crosssell__title
+      +fs(40px, 52px)
+      margin-bottom: 28px
+
+  @media screen and (min-width: 1272px)
+
+    .crosssell__title
+      +fs(48px, 64px)
+      margin-bottom: 32px
+
 .download
   max-width: 296px
   display: flex
