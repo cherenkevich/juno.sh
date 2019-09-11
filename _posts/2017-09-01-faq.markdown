@@ -10,7 +10,7 @@ no-blog: true
 permalink: /faq/
 ---
 ## How do Juno and Juno Connect differ?
-**Juno** is a complete Jupyter development environment for iOS — which means it doens't need a server, since it runs code in your Jupyter notebooks locally, right on your iPad or iPhone. **Juno Connect**, on the other hand, is a Jupyter _client_ for iOS — it lets you use same Jupyter notebook editor you would find in Juno, but instead of running code on device it will use a remote Jupyter server (or cloud-computing service) as a computational backend.
+**[Juno](/){:target="_blank"}** is a complete Jupyter development environment for iOS — which means it doesn't need a server, since it runs code in your Jupyter notebooks locally, right on your iPad or iPhone. **[Juno Connect](/juno-connect/){:target="_blank"}**, on the other hand, is a Jupyter _client_ for iOS — it lets you use same Jupyter notebook editor you would find in Juno, but instead of running code on device it will use a remote Jupyter server (or cloud-computing service) as a computational backend.
 
 Since Juno doesn't need a server to run, it is more deeply integrated into iOS, allowing you to open Jupyter notebooks from other apps, and even edit them "in-place", with all changes saved in the original location.
 
@@ -23,7 +23,8 @@ Juno currently ships with **Python 3.6.6** kernel and following packages pre-ins
 * **Matplotlib 3.1.1**
 * **Pandas 0.25.0**
 
-You can also install any additional packages, as long as they are pure Python ones, see: [Install Python packages in Juno](/juno-pypi-package-installer/){:target="_blank"}.
+You can also install any additional packages, as long as they are pure Python ones: 
+* [Install Python packages in Juno](/juno-pypi-package-installer/){:target="_blank"}
 
 ## How can I access my server in Juno Connect?
 You can either access your Jupyter server directly over HTTP/HTTPS, or by establishing an SSH tunnel with port forwarding. See these guides on how to configure your server and connect to it from your iPad or iPhone: 
