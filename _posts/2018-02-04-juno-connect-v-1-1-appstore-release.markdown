@@ -23,13 +23,13 @@ Juno Connect is going to be available for free, with an optional in-app purchase
 ## We Need Your Support
 We honestly hope that Juno Connect turns out to be a good fit for your workflow and that you find it useful. If you like Juno, keep in mind that **there are many ways to support its development** and keep it going:
 
-* Consider leaving a positive [review on the AppStore](https://itunes.apple.com/app/juno-jupyter-notebook-client/id1315744137): this honestly means the world to us.
+* Consider leaving a positive [review on the AppStore](https://apps.apple.com/app/id1315744137): this honestly means the world to us.
 * [Check out Juno Connect on Product Hunt](https://www.producthunt.com/posts/juno-767a5996-5c93-4d62-880d-14268d1093e5) and leave feedback: the more people hear about Juno Connect the better.
 * [Share your feedback with us](mailto:feedback@juno.sh) if you think Juno Connect lacks or needs to improve something. We are listening!
 
 Thank you once again, and we hope you will enjoy all the new things planned for Juno in the coming year! Stay tuned. 😉
 
-<a href="https://itunes.apple.com/app/juno-jupyter-notebook-client/id1315744137" target="blank">
+<a href="https://apps.apple.com/app/id1315744137" target="blank">
 	<span style="display:block; height: 20px;"></span>
     <img class="download-appstore-badge" style="height: 60px;" alt="Download Juno Connect on AppStore" src="{{ "/images/download_black.svg" | prepend: site.baseurl }}">
 </a>
