@@ -2,7 +2,7 @@
 
 # Site settings
 title: Juno
-description: "Juno and Juno Connect: ultimate Jupyter experience on your iPad or iPhone."
+description: "Juno – ultimate Jupyter experience on your iPad or iPhone."
 analytics: UA-104527683-1
 baseurl:
 url: "//juno.sh"
