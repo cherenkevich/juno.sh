@@ -10,7 +10,7 @@ no-blog: true
 permalink: /faq/
 ---
 ## How do Juno and Juno Connect differ?
-**[Juno](/){:target="_blank"}** is a complete Jupyter development environment for iOS — which means it doesn't need a server, since it runs code in your Jupyter notebooks locally, right on your iPad or iPhone. **[Juno Connect](/juno-connect/){:target="_blank"}**, on the other hand, is a Jupyter _client_ for iOS — it lets you use same Jupyter notebook editor you would find in Juno, but instead of running code on device it will use a remote Jupyter server (or cloud-computing service) as a computational backend.
+**[Juno](/){:target="_blank"}** is a complete Jupyter development environment for iOS — which means it doesn't need a server, since it runs code in your Jupyter notebooks locally, right on your iPad or iPhone. **[Juno Connect](/junoconnect/){:target="_blank"}**, on the other hand, is a Jupyter _client_ for iOS — it lets you use same Jupyter notebook editor you would find in Juno, but instead of running code on device it will use a remote Jupyter server (or cloud-computing service) as a computational backend.
 
 Since Juno doesn't need a server to run, it is more deeply integrated into iOS, allowing you to open Jupyter notebooks from other apps, and even edit them "in-place", with all changes saved in the original location.
 
