@@ -32,7 +32,7 @@ colors:  #in hex code if not noted else
   footer_content: "#bfc9d3"
 
 twitter:
-  username: junoclient
+  username: junoapps
 
 logo: /assets/images/open-graph.png
 about: "Ultimate Jupyter experience on your iPad or iPhone"
@@ -44,7 +44,7 @@ email: contact@juno.sh
 social:
   name: Juno
   links:
-    - https://twitter.com/junoclient
+    - https://twitter.com/junoapps
 
 webmaster_verifications:
   google: XkeGdxyWFoVT7ROPa1di7i4eGi_Pftw9YxQlaspQY3g
