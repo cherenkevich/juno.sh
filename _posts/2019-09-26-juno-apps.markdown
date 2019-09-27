@@ -36,7 +36,7 @@ Also, make sure to check out a new section on our website: [Docs](/docs){:target
 
 
 ## Support Juno!
-I honestly hope that both Juno and Juno Connect turn out fit well into your workflow, and that you find them useful. If you like Juno apps, consider leaving a positive review on the App Store:
+I honestly hope that both Juno and Juno Connect are going to fit well into your workflow, and that you find them useful. If you like Juno apps, consider leaving a positive review on the App Store:
 * [Juno on App Store](https://apps.apple.com/app/id1462586500)
 * [Juno Connect on App Store](https://apps.apple.com/app/id1315744137)
 
