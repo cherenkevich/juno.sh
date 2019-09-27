@@ -25,10 +25,10 @@ Both apps are now paid apps, which you can purchase individually, or as a bundle
 
 ## What's new
 
-For [Juno](https://apps.apple.com/app/id1462586500){:target="_blank"}, everything is new — this is its first public release on the App Store! It is a complete Jupyter development environment for your iPad or iPhone, letting you run notebooks locally on your iOS device using embedded Python kernel and integrated libraries, such as NumPy, Matplotlib and Pandas. You can check out Juno's main features [here](/){:target="_blank"}.
+For [Juno](https://apps.apple.com/app/id1462586500){:target="_blank"}, everything is new — this is its first public release on the App Store! It is a complete Jupyter development environment for your iPad or iPhone, letting you run notebooks locally on your iOS device using Juno's embedded Python kernel and integrated libraries, such as NumPy, Matplotlib and Pandas. You can check out Juno's main features [here](/){:target="_blank"}.
 
 [Juno Connect](https://apps.apple.com/app/id1315744137){:target="_blank"} is a big update, too: it is still a Jupyter client, which lets you connect to a remote Jupyter server, and now it also comes with:
-* **New design**. Juno Connect utilises screen space in a (hopefully) much more efficient manner now.
+* **New design**. Juno Connect uses screen space in a (hopefully) much more efficient manner now.
 * **SSH tunnelling**. You can now connect to your Jupyter servers by establishing an SSH tunnel with port forwarding — which is much easier and more secure.
 * **Dark theme support**. Juno Connect now supports dark colour scheme (even on iOS 12!).
 

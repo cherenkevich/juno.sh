@@ -15,7 +15,7 @@ Although Juno Connect has been designed as a remote client, running Jupyter loca
 
 You can edit and run notebooks using embedded **Python** kernel. The app ships with **NumPy** and **Matplotlib** libraries pre-installed, and you can also add pure-Python modules manually, see issue tracker's README for more info. Due to a self-contained nature of the app, it allows a much better OS integration, among other things:
 
-* **Powerful notebook editor**. The app uses notebook editor from Juno client, utilising hardware keyboard support, code completion, on-screen keyboard extension and other existing features.
+* **Powerful notebook editor**. The app uses notebook editor from Juno client, with hardware keyboard support, code completion, on-screen keyboard extension and other existing features.
 * **Works everywhere**. Just as the Juno client, the new app works on all devices, supporting both iPhone and iPad.
 * **File management**. The app offers a fully-functioning iOS file browser, similar to the one in Files app.
 * **Open notebooks from anywhere**. The app registers itself with Jupyter notebook document type, so you can open notebooks from anywhere in iOS with a single tap.
