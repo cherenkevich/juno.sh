@@ -12,6 +12,10 @@ author: Alex Staravoitau
 
 <!--more-->
 
+<div style="text-align: center;">
+	<img src="{{ "/images/blog/juno_embedded_jupyter.png" | prepend: site.baseurl }}">
+</div>
+
 Since Juno doesn't need a remote server to run, it is more deeply integrated into iOS, allowing you to open Jupyter notebooks from other apps, and even edit them "in-place", with all changes saved in the original location. Juno Connect, being a client, connects to a remote Jupyter server instead (or cloud-computing service, such as [CoCalc](http://cocalc.com){:target="_blank"} or [Azure Notebooks](https://notebooks.azure.com){:target="_blank"}), giving you access to virtually unlimited computational resources of the server you are using as a backend.
 
 
