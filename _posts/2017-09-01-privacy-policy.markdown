@@ -7,6 +7,7 @@ lang: "en_GB"
 date: 2018-05-24 11:00:00
 author: Alex Staravoitau
 no-blog: true
+permalink: /privacy-policy/
 ---
 
 We are very delighted that you have shown interest in our enterprise. Data protection is of a particularly high priority for the management of the Rational Matter. The use of the Internet pages of the Rational Matter is possible without any indication of personal data; however, if a data subject wants to use special enterprise services via our website, processing of personal data could become necessary. If the processing of personal data is necessary and there is no statutory basis for such processing, we generally obtain consent from the data subject. 
@@ -44,7 +45,7 @@ j) **Third party**. Third party is a natural or legal person, public authority, 
 
 k) **Consent**. Consent of the data subject is any freely given, specific, informed and unambiguous indication of the data subject's wishes by which he or she, by a statement or by a clear affirmative action, signifies agreement to the processing of personal data relating to him or her.
 
-l) **Application**. The software application Juno: Jupyter Notebook Client for mobile devices that was created by Rational Matter. The Application is a mobile client that provides access to arbitrary Jupyter server from an iOS device.
+l) **Applications**. The software applications Juno and Juno Connect for mobile devices that were created by Rational Matter. The Applications are a suite of mobile apps allowing to use Jupyter on iOS and iPadOS devices.
 
 
 ### 2. Name and Address of the controller 
@@ -63,7 +64,7 @@ The website of the Rational Matter collects a series of general data and informa
 
 When using these general data and information, the Rational Matter does not draw any conclusions about the data subject. Rather, this information is needed to (1) deliver the content of our website correctly, (2) optimize the content of our website as well as its advertisement, (3) ensure the long-term viability of our information technology systems and website technology, and (4) provide law enforcement authorities with the information necessary for criminal prosecution in case of a cyber-attack. Therefore, the Rational Matter analyzes anonymously collected data and information statistically, with the aim of increasing the data protection and data security of our enterprise, and to ensure an optimal level of protection for the personal data we process. The anonymous data of the server log files are stored separately from all personal data provided by a data subject.
 
-Applications by Rational Matter (such as Juno: Jupyter Notebook Client) collect a series of general data and information when a data subject is using it, having purchased and installed on their mobile device. This general data and information are stored in the server log files. Collected may be (9) application versions used, (10) the operating system used by the accessing system, (11) the date and time of access to the application, and (12) any other similar data and information that may be used in the event of attacks on our information technology systems.
+Applications by Rational Matter (such as Juno and Juno Connect) collect a series of general data and information when a data subject is using it, having purchased and installed on their mobile device. This general data and information are stored in the server log files. Collected may be (9) application versions used, (10) the operating system used by the accessing system, (11) the date and time of access to the application, and (12) any other similar data and information that may be used in the event of attacks on our information technology systems.
 
 Same as for website data, when using these general data and information, the Rational Matter does not draw any conclusions about the data subject. Rather, this information is needed to analyze anonymously collected data and information statistically, with the aim of increasing the data protection and data security of our enterprise, and to ensure an optimal level of protection for the personal data we process. The anonymous data of the server log files are stored separately from all personal data provided by a data subject.
 
@@ -156,7 +157,7 @@ i) **Right to withdraw data protection consent**. Each data subject shall have t
 
 If the data subject wishes to exercise the right to withdraw the consent, he or she may, at any time, contact any employee of the Rational Matter.
 
-### 8. Data protection provisions about the application and use of Google Analytics (with anonymization function) 
+### 8. Data protection provisions about the applications and use of Google Analytics (with anonymization function) 
 On this website, the controller has integrated the component of Google Analytics (with the anonymizer function). Google Analytics is a web analytics service. Web analytics is the collection, gathering, and analysis of data about the behavior of visitors to websites. A web analysis service collects, inter alia, data about the website from which a person has come (the so-called referrer), which sub-pages were visited, or how often and for what duration a sub-page was viewed. Web analytics are mainly used for the optimization of a website and in order to carry out a cost-benefit analysis of Internet advertising.
 
 The operator of the Google Analytics component is Google Inc., 1600 Amphitheatre Pkwy, Mountain View, CA 94043-1351, United States.
