@@ -21,7 +21,7 @@ Since Juno doesn't need a remote server to run, it is more deeply integrated int
 
 ## Pricing
 
-Both apps are now paid apps, which you can purchase individually, or as a [discounted bundle](https://apps.apple.com/app/id1481448756){:target="_blank"}. Neither app will have any in-app purchases in it, and if you have downloaded Juno Connect (the client) previously at any point, you can now use its full functionality, even if you haven't purchased Juno Pro before (Juno Pro was the in-app purchase that previously paywall-ed some features — now decommissioned). This also means that if you have ever downloaded Juno Connect — even when it used to be a free app — you automatically qualify for a Juno discount by completing the [Juno Apps bundle](https://apps.apple.com/app/id1481448756){:target="_blank"}.
+Both apps are now paid apps, which you can purchase individually, or as a [discounted bundle](https://apps.apple.com/app-bundle/id1481448756){:target="_blank"}. Neither app will have any in-app purchases in it, and if you have downloaded Juno Connect (the client) previously at any point, you can now use its full functionality, even if you haven't purchased Juno Pro before (Juno Pro was the in-app purchase that previously paywall-ed some features — now decommissioned). This also means that if you have ever downloaded Juno Connect — even when it used to be a free app — you automatically qualify for a Juno discount by completing the [Juno Apps bundle](https://apps.apple.com/app-bundle/id1481448756){:target="_blank"}.
 
 ## What's new
 
