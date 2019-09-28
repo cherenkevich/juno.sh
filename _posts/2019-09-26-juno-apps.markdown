@@ -21,7 +21,7 @@ Since Juno doesn't need a remote server to run, it is more deeply integrated int
 
 ## Pricing
 
-Both apps are now paid apps, which you can purchase individually, or as a bundle with discount (will be available soon). Neither app will have any in-app purchases in it, and if you have downloaded Juno Connect (the client) previously at any point, you can now use its full functionality, even if you haven't purchased Juno Pro before (Juno Pro was the in-app purchase that previously paywall-ed some features — now decommissioned). This also means that if you have ever downloaded Juno Connect — even when it used to be a free app — you automatically qualify for a Juno discount by completing the Juno Apps bundle (when it becomes available).
+Both apps are now paid apps, which you can purchase individually, or as a [discounted bundle](https://apps.apple.com/app/id1481448756){:target="_blank"}. Neither app will have any in-app purchases in it, and if you have downloaded Juno Connect (the client) previously at any point, you can now use its full functionality, even if you haven't purchased Juno Pro before (Juno Pro was the in-app purchase that previously paywall-ed some features — now decommissioned). This also means that if you have ever downloaded Juno Connect — even when it used to be a free app — you automatically qualify for a Juno discount by completing the [Juno Apps bundle](https://apps.apple.com/app/id1481448756){:target="_blank"}.
 
 ## What's new
 
@@ -37,7 +37,7 @@ Also, make sure to check out a new section on our website: [Docs](/docs){:target
 
 ## Support Juno!
 I honestly hope that both Juno and Juno Connect are going to fit well into your workflow, and that you find them useful. If you like Juno apps, consider leaving a positive review on the App Store:
-* [Juno on App Store](https://apps.apple.com/app/id1462586500)
-* [Juno Connect on App Store](https://apps.apple.com/app/id1315744137)
+* [Juno on App Store](https://apps.apple.com/app/id1462586500){:target="_blank"}
+* [Juno Connect on App Store](https://apps.apple.com/app/id1315744137){:target="_blank"}
 
 Thanks again for your support! 😉
