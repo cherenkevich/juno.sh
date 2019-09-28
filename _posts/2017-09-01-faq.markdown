@@ -10,18 +10,18 @@ no-blog: true
 permalink: /faq/
 ---
 ## How do Juno and Juno Connect differ?
-**[Juno](/){:target="_blank"}** is a complete Jupyter development environment for iOS — which means it doesn't need a server, since it runs code in your Jupyter notebooks locally, right on your iPad or iPhone. **[Juno Connect](/junoconnect/){:target="_blank"}**, on the other hand, is a Jupyter _client_ for iOS — it lets you use same Jupyter notebook editor you would find in Juno, but instead of running code on device it will use a remote Jupyter server (or cloud-computing service) as a computational backend.
+[Juno](/){:target="_blank"} is a complete Jupyter development environment for iOS — which means it doesn't need a server, since it runs code in your Jupyter notebooks locally, right on your iPad or iPhone. [Juno Connect](/junoconnect/){:target="_blank"}, on the other hand, is a Jupyter <i style="font-weight: 600;">client</i> for iOS — it lets you use same Jupyter notebook editor you would find in Juno, but instead of running code on device it will use a remote Jupyter server (or cloud-computing service) as a computational backend.
 
 Since Juno doesn't need a server to run, it is more deeply integrated into iOS, allowing you to open Jupyter notebooks from other apps, and even edit them "in-place", with all changes saved in the original location.
 
 Juno Connect, being a client, connects to a remote Jupyter server instead (or cloud-computing service, such as [CoCalc](http://cocalc.com){:target="_blank"} or [Azure Notebooks](https://notebooks.azure.com){:target="_blank"}), giving you access to virtually unlimited computational resources of the server you are using as a backend.
 
 ## What languages and packages does Juno support?
-Juno currently ships with **Python 3.6.6** kernel and following packages pre-installed:
+Juno currently ships with Python 3.6.6 kernel and following packages pre-installed:
 
-* **NumPy 1.16.4**
-* **Matplotlib 3.1.1**
-* **Pandas 0.25.0**
+* NumPy 1.16.4
+* Matplotlib 3.1.1
+* Pandas 0.25.0
 
 You can also install any additional packages, as long as they are pure Python ones: 
 * [Install Python packages in Juno](/juno-pypi-package-installer/){:target="_blank"}
@@ -45,7 +45,7 @@ Alternatively, if you don't want to go through the hassle of configuring your ow
 Juno Connect doesn't support any JupyterLab specific features yet; however, all JupyterLab servers also include “classic" Jupyter Notebook as a fallback option, which Juno Connect works with perfectly. JupyterLab servers should be detected automatically in Juno Connect, redirecting to this "classic" interface — if your server keeps loading JupyterLab, try appending `/tree` to your JupyterLab server URL. 
 
 ## My hardware keyboard doesn’t have an Esc key
-Notebook editor in Juno and Juno Connect allows configuring an additional binding to **Control** or **Option** key, which will duplicate **Esc** key and will let you enter command mode, for instance.
+Notebook editor in Juno and Juno Connect responds to default Jupyter shortcuts on your hardware keyboard, and also allows configuring an additional binding to `Control` or `Option` key, which will duplicate `Esc` key and will let you enter command mode, for instance.
 
 ## I discovered a defect
 Please, report all defects and feature requests in the issue tracker: [Juno Issue Tracker](https://github.com/rationalmatter/Juno-Issue-Tracker){:target="_blank"}.
