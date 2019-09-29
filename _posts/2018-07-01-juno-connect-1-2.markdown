@@ -8,7 +8,7 @@ date: 2018-07-01 12:00:00
 author: Alex Staravoitau
 ---
 
-**Juno Connect 1.2** is out, and it is our first major update since hitting the AppStore! Juno Connect is now a **universal app**, which means you can install it on both your iPhone _and_ iPad, bringing Jupyter to all mobile devices running iOS 10.3 or later. **Juno Connect Pro** works for **all of your devices**, too: if you previously purchased Juno Connect Pro on iPad, simply restore purchase on your iPhone. Juno Connect supports same features on iPhone as the iPad version, so you will get full access to your Jupyter server wherever you are. <!--more-->
+Juno Connect 1.2 is out, and it is our first major update since hitting the AppStore! Juno Connect is now a universal app, which means you can install it on both your iPhone _and_ iPad, bringing Jupyter to all mobile devices running iOS 10.3 or later. _Juno Connect Pro_ works for all of your devices, too: if you previously purchased Juno Connect Pro on iPad, simply restore purchase on your iPhone. Juno Connect supports same features on iPhone as the iPad version, so you will get full access to your Jupyter server wherever you are. <!--more-->
 
 <span style="display:block; height: 20px;"></span>
 <div style="text-align: center;">

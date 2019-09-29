@@ -8,7 +8,7 @@ date: 2018-02-04 12:00:00
 author: Alex Staravoitau
 ---
 
-After months of making and beta testing Juno Connect has finally made it to the AppStore! 🎉 **Juno Connect 1.1** is our first public release, featuring a revamped user interface that makes it much easier to work with your servers and notebooks on a touch device. <!--more-->
+After months of making and beta testing Juno Connect has finally made it to the AppStore! 🎉 Juno Connect 1.1 is our first public release, featuring a revamped user interface that makes it much easier to work with your servers and notebooks on a touch device. <!--more-->
 
 <div style="text-align: center;">
 	<img src="{{ "/images/blog/appstore_release_v_1_1_1.png" | prepend: site.baseurl }}" alt="Juno Connect demo notebooks">

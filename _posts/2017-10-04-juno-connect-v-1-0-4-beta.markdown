@@ -8,7 +8,7 @@ date: 2017-10-04 12:00:00
 author: Alex Staravoitau
 ---
 
-Today we are releasing **Juno Connect v.1.0.4** update to our beta testers! It adds on-screen keyboard extension and 1Password integration, as well as includes a number of bug fixes and performance improvements. <!--more-->
+Today we are releasing Juno Connect v.1.0.4 update to our beta testers! It adds on-screen keyboard extension and 1Password integration, as well as includes a number of bug fixes and performance improvements. <!--more-->
 
 <div style="text-align: center;">
 	<img src="{{ "/images/blog/keyboard_v_1_0_4.png" | prepend: site.baseurl }}" alt="Juno Connect keyboard extension">

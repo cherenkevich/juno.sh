@@ -8,7 +8,7 @@ date: 2019-09-26 12:00:00
 author: Alex Staravoitau
 ---
 
-**Juno 1.1** and **Juno Connect 1.4** are now available on the App Store, with a lot of new things! First of all, and most importantly, we now offer a suite of apps for running Jupyter on iOS: Juno, which runs notebooks locally on device, and Juno Connect, a Jupyter client (more about the change [here](/blog/juno-embedded-jupyter#what-happens-to-jupyter-client)). 
+[Juno 1.1](https://apps.apple.com/app/id1462586500){:target="_blank"} and [Juno Connect 1.4](https://apps.apple.com/app/id1315744137){:target="_blank"} are now available on the App Store, with a lot of new things! First of all, and most importantly, we now offer a suite of apps for running Jupyter on iOS: Juno, which runs notebooks locally on device, and Juno Connect, a Jupyter client (more about the change [here](/blog/juno-embedded-jupyter#what-happens-to-jupyter-client)). 
 
 <!--more-->
 

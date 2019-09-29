@@ -8,7 +8,7 @@ date: 2019-02-04 12:00:00
 author: Alex Staravoitau
 ---
 
-**Juno Connect 1.3** is out now, bringing a whole bunch of new features and bug fixes! Juno Connect now supports [Binder](https://mybinder.org), a service for launching git repositories with notebooks as executable Jupyter environments: you can specify a GitHub or GitLab repo containing Jupyter notebooks you would like to run, and it will be launched as a temporary Jupyter server in Juno Connect. <!--more-->
+Juno Connect 1.3 is out now, bringing a whole bunch of new features and bug fixes! Juno Connect now supports [Binder](https://mybinder.org), a service for launching git repositories with notebooks as executable Jupyter environments: you can specify a GitHub or GitLab repo containing Jupyter notebooks you would like to run, and it will be launched as a temporary Jupyter server in Juno Connect. <!--more-->
 
 <span style="display:block; height: 20px;"></span>
 <div style="text-align: center;">

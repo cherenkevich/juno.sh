@@ -8,7 +8,7 @@ date: 2017-12-14 12:00:00
 author: Alex Staravoitau
 ---
 
-Today we are releasing **Juno Connect v.1.0.10** update to our beta testers! This release includes [CoCalc](http://cocalc.com) integration, improved connection checker, as well as a number of bug fixes and performance improvements. <!--more-->
+Today we are releasing Juno Connect v.1.0.10 update to our beta testers! This release includes [CoCalc](http://cocalc.com) integration, improved connection checker, as well as a number of bug fixes and performance improvements. <!--more-->
 
 <div style="text-align: center;">
 	<img src="{{ "/images/blog/cocalc_v_1_0_10.png" | prepend: site.baseurl }}" alt="Juno Connect demo notebooks">

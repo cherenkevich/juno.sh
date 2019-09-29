@@ -8,7 +8,7 @@ date: 2017-11-20 12:00:00
 author: Alex Staravoitau
 ---
 
-Today we are releasing **Juno Connect v.1.0.9** update to our beta testers! This release includes improved typography, visual design updates, as well as a number of bug fixes and performance improvements. <!--more-->
+Today we are releasing Juno Connect v.1.0.9 update to our beta testers! This release includes improved typography, visual design updates, as well as a number of bug fixes and performance improvements. <!--more-->
 
 <div style="text-align: center;">
 	<img src="{{ "/images/blog/demo_notebooks_v_1_0_6.png" | prepend: site.baseurl }}" alt="Juno Connect demo notebooks">
