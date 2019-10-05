@@ -22,14 +22,6 @@ You can edit and run notebooks using embedded **Python** kernel. The app ships w
 * **Edit notebooks in place**. Whenever you open a notebook, all your changes will be saved in the original location — even when opened from another app!
 * **Access notebook directory**. By default, you can only access notebook's directory when running notebooks in the app's sandbox, i.e. in app's folder on device or in iCloud. This means that you won't be able to read or write files from code in notebook, if said notebook is in another app's sandbox — say, when you are editing in place. However, you can now explicitly grant access to the notebook's directory by tapping the folder-lock button and selecting the folder with your notebook. As easy as that!
 
-#### Call for beta testers
-If you would like to help test it, please install using **TestFlight** link below:
-
-<a href="https://testflight.apple.com/join/XRjYzgMU" target="blank">
-	<b>https://testflight.apple.com/join/XRjYzgMU</b>
-</a>
-{: style="text-align: center;"}
-
 #### Bug reporting
 Please, keep in mind that the app is still in active development, so quite a few things might not work. Please, report any requests or defects you encounter by opening an issue in tracker (you can use the link below, or go to _About -> Report an issue_ in the app). Also, please report any modules or packages that you would like to be pre-installed. Don't forget to search for existing issues first, in case someone else has reported your thing already. **Issue tracker** is available on GitHub:
 
